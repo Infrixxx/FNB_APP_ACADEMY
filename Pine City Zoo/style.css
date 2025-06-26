@@ -46,5 +46,11 @@ body{
     color: white;
     text-align: center;
     padding-top: 12px;
-    
+
+}
+
+/*====  Main-Home  ====*/
+
+#main-home {
+    margin-top: 120px; /* to show a part of the map that is cut, we push it below the height of the header and top tabs =120 px*/
 }
