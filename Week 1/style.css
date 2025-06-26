@@ -1,0 +1,29 @@
+h1{
+    color:blueviolet;
+    font-family:Georgia;
+}
+p{
+    color:lightseagreen;
+    font-family: fantasy;
+}
+
+ul{
+    list-style-type: circle;    
+}
+
+ul{
+    list-style-image: url('images/icons8-cursor-50.png');
+    list-style-type:lower-roman;
+}
+#menu-bar a{
+    text-decoration: none;
+    background-color: rgb(44, 211, 211);
+    font-family: Verdana;
+    padding: 5px;
+}
+
+#menu-bar a:hover{
+    background-color: purple;
+    color: yellow;
+
+}
