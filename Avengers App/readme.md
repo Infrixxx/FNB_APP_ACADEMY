@@ -4,3 +4,6 @@
 
 #### HTML
 #### CSS
+
+The main file, is the index file, that directs the user to the different pages of the web app.
+This was a fun interactive exercise using some basics of html and css.
