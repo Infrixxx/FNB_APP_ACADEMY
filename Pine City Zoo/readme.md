@@ -4,4 +4,4 @@
 
 *The Index file is the main access point for the app created with html*
 
-## *The style file, contains the css styling of the app*
+*The style file, contains the css styling of the app*
