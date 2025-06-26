@@ -1,8 +1,0 @@
-for class
-
-	we use :
-		
-		.classname variable{
-	}
-
-<b></b>	used to make text bolt
