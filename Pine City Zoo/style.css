@@ -24,6 +24,27 @@ body{
 
 /*====  Styling the top tabs  ====*/
 
-#tabs-top{
+#tabs-top {
+
+    position: fixed;
+    top: 80px; /*positioned  80 pixels below the header, the header is sized at 80 px*/
+    left: 0px;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: darkgreen;
+
+}
+
+#tabs-top a{
+    float: left;
+    display: block;
+    width:33%;
+    height: 35px;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding-top: 12px;
     
 }
