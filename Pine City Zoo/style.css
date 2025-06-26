@@ -1,0 +1,26 @@
+body{
+    padding : 0;
+    margin :0;
+    font-family: Helvetica;
+}
+/*====  Styling the header  ====*/
+#header{
+    position : fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 500; /*ensures header is above everyhting*/
+    width: 100%;
+    height: 80px;
+    background-image: url("images/wood-bg.png");
+    background-repeat: repeat-x;
+}
+
+#header img{
+    display: block;
+    margin: auto;  /*centralizes the image automatically*/
+    height: 70%;
+
+}
+
+/*====  Styling the top tabs  ====*/
+
