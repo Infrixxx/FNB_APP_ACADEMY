@@ -82,3 +82,28 @@ body{
     padding-top: 12px;
 
 }
+
+/*====  Styling the Main  ====*/
+
+#main{
+    margin-top: 119px;
+    background: url('images/map-blur.png');
+    background-repeat: repeat-y;
+}
+
+#content{
+    padding-top: 1px;
+    padding-bottom: 50px;
+}
+
+/*====  Info box  ====*/
+
+a.info-box{
+    text-decoration: none;
+    background: rgba(255,255,255, .8); /* slightly transparent, 20% */
+    display :block;
+    margin:auto;
+    margin-top: 12px;
+    padding: 1px;
+
+}
