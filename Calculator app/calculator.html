@@ -1,0 +1,63 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="4">
+                <input type="text" id="inputBox" value="0"/>
+            </td>
+        </tr>
+        <tr>
+            <td onclick="digitButtonPress(7)">7</td>
+            <td onclick="digitButtonPress(8)">8</td>
+            <td onclick="digitButtonPress(9)">9</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td onclick="digitButtonPress(4)">4</td>
+            <td onclick="digitButtonPress(5)">5</td>
+            <td onclick="digitButtonPress(6)">6</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td onclick="digitButtonPress(1)">1</td>
+            <td onclick="digitButtonPress(2)">2</td>
+            <td onclick="digitButtonPress(3)">3</td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td colspan="2">0</td> <!--colspan takes the size of two columns-->
+            <td onclick="buttonAcPress()">AC</td>
+            <td>/</td>
+        </tr>
+        <tr>
+            <td colspan="4">=</td>
+        </tr>
+    </table>
+    <script>
+        // Calculator functionality would go here
+
+        var newline = true; //to remove the zero when user presses
+
+        function digitButtonPress(button){
+
+            if (newline){
+                document.getElementById("inputBox").value = button;
+                newline = false;
+            }
+            else{
+                var currentValue = document.getElementById("inputBox").value;
+                document.getElementById("inputBox").value=currentValue + button;
+            }
+        }
+        function buttonAcPress(){
+            document.getElementById("inputBox").value=0;
+            newline=true;
+        }
+
+
+    </script>
+</body>
+</html>
