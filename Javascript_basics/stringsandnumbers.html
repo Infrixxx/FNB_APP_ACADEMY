@@ -12,10 +12,17 @@
         var num1 = stringToNumber(text1);
         var num2 = stringToNumber(text2);
 
-        document.getElementById("outputText").innerHTML = num1 + num2;
+        /* exception handling to avoid errors */
+
+        if(isNaN(num1) || isNaN(num2)){
+            document.getElementById("outputText").innerHTML = "You entered an invalid number!";
+        }
+        else{
+            document.getElementById("outputText").innerHTML = num1 + num2;
+        }
 
         /*function to convert string to number*/
-        
+
         function stringToNumber(text) {
             return parseInt(text);
         }
