@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type=text/css href="style.css">
+    </head>
+    <body>
+        <h1>Javascript functions</h1>
+        
+    
+        <h2 id="heading" onclick ='changetxt()'> Boitumelo </h2>
+
+        <p id="addition"></p>
+        <script>
+
+            document.getElementById("addition").innerHTML= addnumbers(5,70)
+
+            function changetxt(){
+                if(document.getElementById("heading").innerHTML == 'Boitumelo'){
+                    document.getElementById("heading").innerHTML='is awesome'
+                } else {
+                    document.getElementById("heading").innerHTML = 'Boitumelo';}
+
+            }
+
+            function addnumbers(num1,num2){
+                return num1+num2;
+            }
+        </script>
+    </body>
+</html>
