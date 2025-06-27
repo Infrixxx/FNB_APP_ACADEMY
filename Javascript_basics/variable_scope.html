@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Javascript variable scope</h1>
+
+    <p id="addition"></p>
+
+    <script>
+        var test = 100; //calls it globally outside the function
+        function test_func() {
+            //var test = 100;   calling it outside the function makes it undefined, since it's only in the function not global
+        }
+            document.getElementById("addition").innerHTML = test;  
+
+        // Call the function so it actually runs
+        test();
+    </script>
+</body>
+</html>
