@@ -8,10 +8,17 @@
         <p id="paragraph1">Everyone</p>
         <script>
             var text1;
-            document.getElementById("heading1").innerHTML=('This is Javascript');
-            document.getElementById("paragraph1").innerHTML=("I'm having fun");
+            var text2;
+
+            text1="Hello everyone";
+            text2="I love learning JS,";
+            text3=" JS is awesome"
+
             document.getElementById("paragraph1").innerHTML=('5'+5); /*use without double quotes so they are recognized as numbers not text*/
             document.getElementById("paragraph1").innerHTML=('5'+5); /*concatenated as two sections of text*/
+
+            document.getElementById("heading1").innerHTML=(text1)
+            document.getElementById("paragraph1").innerHTML=(text2+text3)
 
         </script>
     </body>
