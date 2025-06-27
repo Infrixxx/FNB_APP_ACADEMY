@@ -88,7 +88,9 @@ body{
 #main{
     margin-top: 119px;
     background: url('images/map-blur.png');
-    background-repeat: repeat-y;
+    width: 100vw;          /* Full viewport width */
+    height: 100vh;         /* Full viewport height */
+    background-size: cover;
 }
 
 #content{
@@ -130,4 +132,23 @@ a.info-box{
     float      : right;
     margin-top : 25px;
     height     : 40px;
+}
+
+/*====  Info box full ====*/
+
+#info-box-full{
+    background-color : rgba(255, 255, 255, .8) ;
+    width   : 90%;
+    display : block;
+    margin  : auto;
+    margin-top : 12px;
+    padding    : 10px;
+}
+
+#info-box-full img{
+    width : 100%;
+}
+
+#info-box-full h3{
+    text-align : center;
 }
