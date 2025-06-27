@@ -6,9 +6,17 @@
     <body>
         <h1 id="heading1">Hello</h1>
         <p id="paragraph1">Everyone</p>
+        <p id="paragraph2"></p>
         <script>
+            /*====  Variables ====*/
+
             var text1; /*containers in the memory of the computer that stores data types*/
             var text2;
+
+            /*== Direct assignment of values to variables ==*/
+            var num1 = 7;
+            var num2 = 5;
+            var num3 = 10;
 
             text1="Hello everyone";
             text2="I love learning JS,";
@@ -19,6 +27,7 @@
 
             document.getElementById("heading1").innerHTML=(text1)
             document.getElementById("paragraph1").innerHTML=(text2+text3)
+            document.getElementById("paragraph2").innerHTML=('The product of : '+num1+" x "+num2+" = " + num1*num2)
 
         </script>
     </body>
