@@ -9,28 +9,31 @@
                 <input type="text" id="inputBox" value="0"/>
             </td>
         </tr>
-        <tr>
-            <td onclick="digitButtonPress(7)">7</td>
-            <td onclick="digitButtonPress(8)">8</td>
-            <td onclick="digitButtonPress(9)">9</td>
-            <td onclick="operatorBtn('+')">+</td>
+         <tr>
+            <td class="digitButton" onclick="digitButtonPress(7)">7</td>
+            <td class="digitButton" onclick="digitButtonPress(8)">8</td>
+            <td class="digitButton" onclick="digitButtonPress(9)">9</td>
+            <td class="operatorButton" onclick="operatorBtn('+')">+</td>
         </tr>
         <tr>
-            <td onclick="digitButtonPress(4)">4</td>
-            <td onclick="digitButtonPress(5)">5</td>
-            <td onclick="digitButtonPress(6)">6</td>
-            <td onclick="operatorBtn('-')">-</td>
+            <td class="digitButton" onclick="digitButtonPress(4)">4</td>
+            <td class="digitButton" onclick="digitButtonPress(5)">5</td>
+            <td class="digitButton" onclick="digitButtonPress(6)">6</td>
+            <td class="operatorButton" onclick="operatorBtn('-')">-</td>
         </tr>
         <tr>
-            <td onclick="digitButtonPress(1)">1</td>
-            <td onclick="digitButtonPress(2)">2</td>
-            <td onclick="digitButtonPress(3)">3</td>
-            <td onclick="operatorBtn('x')">*</td>   <!--For when we use the switch cases, so that it sees x is pressed and makes use of the '*' operator-->>
+            <td class="digitButton" onclick="digitButtonPress(1)">1</td>
+            <td class="digitButton" onclick="digitButtonPress(2)">2</td>
+            <td class="digitButton" onclick="digitButtonPress(3)">3</td>
+            <td class="operatorButton" onclick="operatorBtn('*')">*</td>
         </tr>
         <tr>
-            <td colspan="2" onclick="digitButtonPress(0)">0</td> <!--colspan takes the size of two columns-->
-            <td onclick="buttonAcPress()">AC</td>
-            <td onclick="operatorBtn('/')">/</td>
+            <td class="digitButton" colspan="2" onclick="digitButtonPress(0)">0</td>
+            <td class="ACButton" onclick="buttonAcPress()">AC</td>
+            <td class="operatorButton" onclick="operatorBtn('/')">/</td>
+        </tr>
+        <tr>
+            <td colspan="4" onclick="equalsBtnPressed()">=</td>
         </tr>
         <tr>
             <td colspan="4" onclick="equalsBtnPressed()">=</td>
