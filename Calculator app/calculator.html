@@ -25,15 +25,15 @@
             <td onclick="digitButtonPress(1)">1</td>
             <td onclick="digitButtonPress(2)">2</td>
             <td onclick="digitButtonPress(3)">3</td>
-            <td onclick="operatorBtn('*')">*</td>
+            <td onclick="operatorBtn('x')">*</td>   <!--For when we use the switch cases, so that it sees x is pressed and makes use of the '*' operator-->>
         </tr>
         <tr>
-            <td colspan="2">0</td> <!--colspan takes the size of two columns-->
+            <td colspan="2" onclick="digitButtonPress(0)">0</td> <!--colspan takes the size of two columns-->
             <td onclick="buttonAcPress()">AC</td>
-            <td>/</td>
+            <td onclick="operatorBtn('/')">/</td>
         </tr>
         <tr>
-            <td colspan="4">=</td>
+            <td colspan="4" onclick="equalsBtnPressed()">=</td>
         </tr>
     </table>
     <script>
@@ -69,8 +69,38 @@
 
         function operatorBtn(operator){
             currentOperator = operator;
-            value1=parseInt(document.getElementById("inputbox").value);
+            value1 = parseInt(document.getElementById("inputBox").value); // fixed case
+            newline = true; // changed True to true
+        }
+        
+        // Event handler for equals to button
 
+        function equalsBtnPressed() {
+            var value2 = parseInt(document.getElementById("inputBox").value);
+            var finalTotal;
+
+            switch(currentOperator) {
+                case "+":
+                    finalTotal = value1 + value2;
+                    break;
+                case "-":
+                    finalTotal = value1 - value2;
+                    break;
+                case "*":
+                    finalTotal = value1 * value2;
+                    break;
+                case "/":
+                    finalTotal = value1 / value2;
+                    break;
+                default:
+                    finalTotal = value2; // If no operator was selected, just keep current value
+            }
+
+            document.getElementById("inputBox").value = finalTotal;
+            newline = true;
+
+            value1=0;
+            newline=true;
         }
 
 
