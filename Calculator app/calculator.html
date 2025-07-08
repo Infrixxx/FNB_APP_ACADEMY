@@ -13,19 +13,19 @@
             <td onclick="digitButtonPress(7)">7</td>
             <td onclick="digitButtonPress(8)">8</td>
             <td onclick="digitButtonPress(9)">9</td>
-            <td>+</td>
+            <td onclick="operatorBtn('+')">+</td>
         </tr>
         <tr>
             <td onclick="digitButtonPress(4)">4</td>
             <td onclick="digitButtonPress(5)">5</td>
             <td onclick="digitButtonPress(6)">6</td>
-            <td>-</td>
+            <td onclick="operatorBtn('-')">-</td>
         </tr>
         <tr>
             <td onclick="digitButtonPress(1)">1</td>
             <td onclick="digitButtonPress(2)">2</td>
             <td onclick="digitButtonPress(3)">3</td>
-            <td>*</td>
+            <td onclick="operatorBtn('*')">*</td>
         </tr>
         <tr>
             <td colspan="2">0</td> <!--colspan takes the size of two columns-->
@@ -37,10 +37,15 @@
         </tr>
     </table>
     <script>
+
         // Calculator functionality would go here
 
-        var newline = true; //to remove the zero when user presses
+        var newline = true; // to remove the zero when user presses, determines wether the next thing the user types should be on a newline.
+        var value1; //current value in the screen
+        var currentOperator;
 
+        // Event handler for when button is pressed
+        
         function digitButtonPress(button){
 
             if (newline){
@@ -52,9 +57,20 @@
                 document.getElementById("inputBox").value=currentValue + button;
             }
         }
+
+        // Event handler for when AC button is pressed
+
         function buttonAcPress(){
             document.getElementById("inputBox").value=0;
             newline=true;
+        }
+
+        // Event handler for when operator is pressed
+
+        function operatorBtn(operator){
+            currentOperator = operator;
+            value1=parseInt(document.getElementById("inputbox").value);
+
         }
 
 
